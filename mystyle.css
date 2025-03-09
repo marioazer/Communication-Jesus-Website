@@ -1,0 +1,33 @@
+body::before {
+    content: ''; /* Empty content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Black color with 30% opacity */
+    z-index: -1; /* Make sure it's behind the content */
+}
+
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 250px;
+}
+
+.topnav a{
+    float: left;
+    color: goldenrod;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover{
+    color: white;
+}
+
+.topnav a.active{
+    color: goldenrod;
+}
